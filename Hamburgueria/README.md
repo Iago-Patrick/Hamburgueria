@@ -1,17 +1,8 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/1mwkA3oN)
-## Nome do Repositório
+## Hamburgueria
 
 ### Introdução 
 
-* Colocar aqui uma breve explicação do programa
-* Explicar o processamento
-
-### Uso
-
-* Colocar aqui a sintáxe de uso do programa
-* Entradas esperadas
-* Saída produzida
-
+*Esse programa se trata de um sistema de hamburgueria desenvolvido por mim e meus colegas de faculdade, com cardápio e telas de cliente, garçom, cozinheiro, gerente e de limpeza, usando a linguagem C++ junto com o QT creator.
 
 ## Para fazer login:
 
@@ -30,11 +21,6 @@
 * Cozinha:
   - usuário: cozinha (iprs)
   - senha: 1234
-
-### Exemplos
-
-* Colocar aqui alguns exemplos
-* Casos de uso
 
 ### Orientação
 
