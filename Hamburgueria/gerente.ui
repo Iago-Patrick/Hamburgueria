@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gerente</class>
+ <widget class="QMainWindow" name="gerente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gerente</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="1">
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>30</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinAndMaxSize</enum>
+      </property>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #000000;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Estoque</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QLabel" name="label_3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos.qrc">:/imagens/images/linha_cursiva_2.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #d0021b;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Limpeza</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #d0021b;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Pedidos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="3">
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos.qrc">:/imagens/images/linha_cursiva_2.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #d0021b;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Ver Contas</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #000000;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Solicitar Limpeza</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #000000;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Financeiro</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+border: 3px solid #000000;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+      </property>
+      <property name="text">
+       <string>Voltar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QListView" name="mensagens">
+      <property name="minimumSize">
+       <size>
+        <width>450</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px solid #d0021b;
+border-radius: 20px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: rgb(100, 60, 0);
+font: 10pt &quot;Georgia&quot;;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+border: 3px solid #000000;
+}
+
+QPushButton::hover{
+	background-color: rgb(80, 60, 0)
+}
+
+QPushButton::pressed {
+	background-color: rgb(90, 10, 0)
+}</string>
+      </property>
+      <property name="text">
+       <string>Adicionar novos usuários</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 75 18pt &quot;Georgia&quot;;
+color: rgb(0, 0, 0);
+text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string>Avisos:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="recursos.qrc">:/imagens/images/logo_hydra_burger.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>gerente</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>453</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

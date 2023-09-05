@@ -1,0 +1,85 @@
+# INSTALL
+
+## Descreva como compilar e instalar o seu programa
+
+O nome do projeto é no padrão pf3-gXX-name, onde:
+
+- g01 é o número do seu grupo
+- tico e teco
+
+Exemplos:
+
+* pf3-tico-teco
+
+
+## Passos para compilar
+
+0. arquivos iniciais na pasta rascunhos/pf3-tico-teco:
+
+* ex14.cpp
+* ex14.ui
+
+
+1. gerar arquivo de projeto na pasta pf3-tico-teco:
+
+qmake-qt5 -project
+
+
+2. ajustar o arquivo de projeto pf3-tico-teco:
+
+vi pf3-tico-teco.pro
+
+Adicionar linha:
+QT += gui widgets sql
+
+Alterar linhas, onde N é o número do exercício:
+TARGET = ex14.out
+
+Se necessário, alterar:
+SOURCES += ex14.cpp
+
+
+3. gerar o Makefile com:
+
+/* DEBUG */
+qmake-qt5 pf3-tico-teco.pro CONFIG+=debug
+
+/* RELEASE */
+qmake-qt5 pf3-tico-teco.pro CONFIG+=release
+
+4. gerar biblioteca ui_exN.h e o binário exN.out com:
+
+make -f Makefile
+
+
+------------------------------------------------------
+Resumo
+
+Total 6 arquivos:
+
+1. exN.cpp (arquivo digitado manualmente)
+2. exN.ui (arquivo digitado ou criado em editor visual)
+3. pf3-gXX-name.pro (arquivo gerado pelo comando: qmake-qt5 -project)
+4. Makefile (arquivo gerado pelo comando: qmake-qt5 pf3-gXX-name.pro)
+5. ui_exN.h (arquivo gerado pelo comando: make -f Makefile)
+6. exN.out (arquivo gerado pelo comando: make -f Makefile)
+
+O arquivo _makefile_ contem a receita acima.
+
+
+------------------------------------------------------
+Exemplo de aula
+Prof. Dr. Ruben Carlo Benante
+2023-06-20
+
+
+------
+Automatizando
+1. Jogue as linhas abaixo no ".pro":
+
+tail -n2 INSTALL >> pf3-tico-teco.pro
+
+2. Apague o TARGET antigo.
+
+QT += gui widgets sql
+TARGET = ex14.out

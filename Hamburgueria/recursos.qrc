@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/imagens">
+        <file>images/akernaak.gif</file>
+        <file>images/background_cliente.png</file>
+        <file>images/flof.gif</file>
+        <file>images/hydra.gif</file>
+        <file>images/linha_cursiva_2.png</file>
+        <file>images/linha_cursiva_3.png</file>
+        <file>images/logo_hydra_burger.png</file>
+        <file>images/logo-poli.png</file>
+        <file>images/background_comes.png</file>
+        <file>images/borda_comes.png</file>
+        <file>images/flor.png</file>
+    </qresource>
+</RCC>
